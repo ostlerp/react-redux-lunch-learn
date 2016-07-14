@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import AppWrapper from '../../components/App/Wrapper';
 
-class App extends Component {
+class AppWrapper extends Component {
 
   constructor(props){
     super(props);
@@ -10,11 +9,11 @@ class App extends Component {
 
   render() {
     return (
-      <AppWrapper>
+      <div className="app-container">
         { this.props.children }
-      </AppWrapper>
+      </div>
     );
   }
 }
 
-export default connect()(App);
+export default AppWrapper;

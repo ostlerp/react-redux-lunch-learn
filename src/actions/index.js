@@ -1,1 +1,1 @@
-export let AuthActions = require('./AuthActions');
+export let SlideActions = require('./SlideActions');

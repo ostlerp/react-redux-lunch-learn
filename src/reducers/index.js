@@ -1,20 +1,8 @@
 import CombineReducers from './combineReducers';
-import { combineReducers } from 'redux';
-import { reducer as form } from 'redux-form';
-import { AuthActions } from '../actions';
-import { auth } from './auth/';
+import slide from './slide';
 
 const appReducer = CombineReducers({
-  form,
-  auth
+  slide
 });
 
-const rootReducer = (state, action) => {
-  if(action.type === AuthActions.LOGOUT) {
-    state = null;
-  }
-
-  return appReducer(state, action);
-}
-
-export default rootReducer;
+export default appReducer;
