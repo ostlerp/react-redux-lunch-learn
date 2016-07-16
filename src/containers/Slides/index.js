@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { SlideActions } from '../../actions';
-import { Wrapper, Intro } from '../../components/Slides';
+import { Wrapper, Single } from '../../components/Slides';
+import SlideData from '../../../data/slides.json';
 
 class Slides extends Component {
 
@@ -22,11 +23,11 @@ class Slides extends Component {
 
   render() {
 
-    let currentSlide = <Intro />;
+    const { slide } = this.props;
 
     return (
       <Wrapper onNext={ this.handleNextSlide } onPrev={ this.handlePrevSlide }>
-        { currentSlide }
+        <Single {...SlideData[slide - 1]} />
       </Wrapper>
     );
   }

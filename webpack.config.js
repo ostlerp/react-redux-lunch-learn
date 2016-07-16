@@ -38,6 +38,11 @@ var webpackConfig = {
         test: /\.scss$/,
         loader: currentEnvironment === 'local' ? 'style!css?sourceMap!postcss!sass?sourceMap' : ExtractTextPlugin.extract('style-loader', 'css!postcss!sass')
       },
+      {
+        test: /\.json$/,
+        exclude: /node_modules/,
+        loader: 'json'
+      }
     ],
   },
   postcss: function () {

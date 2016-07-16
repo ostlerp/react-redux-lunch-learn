@@ -1,0 +1,73 @@
+[
+  {
+    "title": "Let's eat food and learn something",
+    "image": "business-lunch.jpg"
+  },
+  {
+    "title": "What we'll talk about",
+    "info": [
+      "The basics of React and Redux",
+      "Why they are cool",
+      "How they work together"
+    ]
+  },
+  {
+    "title": "What is React",
+    "info": ["It's just the View"],
+    "image": "react-view-example.png"
+  },
+  {
+    "title": "Why's it cool then?",
+    "info": [
+      "In React, the UI is a pure function of state and props"
+    ],
+    "image": "disappointed.gif"
+  },
+  {
+    "title": "Wait, that makes it cool?",
+    "info": [
+      "The UI is predictable",
+      "Components are loosely coupled"
+    ]
+  },
+  {
+    "title": "OK, now for Redux",
+    "info": [
+      "It's a single object",
+      "Minimal representation of the entire application state"
+    ],
+    "image": "state-example.png"
+  },
+  {
+    "title": "Tell us more",
+    "info": [
+      "It's independent of React",
+      "Could be used with Angular if you wanted"
+    ]
+  },
+  {
+    "title": "How it works",
+    "info": [
+      "The UI takes events and dispatches Actions",
+      "Reducers take Actions and create State",
+      "Components take State and create UI"
+    ],
+    "image": "flux-flow.png"
+  },
+  {
+    "title": "Better Together",
+    "info": [
+      "Redux: State is a pure function of Actions",
+      "React: UI is a pure function of State",
+      "State and UI are just functions, so they are testable"
+    ]
+  },
+  {
+    "title": "Action Jackson",
+    "info": [
+      "Everything happens through Actions",
+      "You can describe your App as a series of Actions"
+    ],
+    "image": "action-series.png"
+  }
+]

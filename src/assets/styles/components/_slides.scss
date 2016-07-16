@@ -1,0 +1,33 @@
+.slide-wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #1f4e5f;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.slide-content{
+  color: #f4f7f7;
+  margin-top: 200px;
+  width: 800px;
+
+  h2 {
+    font-size: 3em;
+  }
+
+  ul {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+
+  li {
+    margin-top: 10px;
+  }
+
+  .image-wrapper {
+    display:flex;
+    justify-content: center;
+  }
+}
