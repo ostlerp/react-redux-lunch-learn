@@ -15,9 +15,11 @@ console.log('The ENV is ' + process.env.NODE_ENV);
 
 // Stylesheets
 require('./assets/styles/main.scss');
+require('./vendor/prism.css');
 
 // Vendor JS
 require('./vendor/polyfills.js');
+require('./vendor/prism.js');
 
 render((
   <Provider store={store}>

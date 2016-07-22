@@ -76,5 +76,13 @@
       "They listen to actions and return objects"
     ],
     "image": "reducer.png"
+  },
+  {
+    "title": "Let's try it!",
+    "info": [
+      "We'll write an action and a reducer together",
+      "Then you'll write an action and a reducer",
+      "As a group, we will judge and shame you for your PR"
+    ]
   }
 ]

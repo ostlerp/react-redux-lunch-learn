@@ -2,8 +2,14 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
+  margin-top: 20px;
 }
 
 .title {
-  margin: 80px;
+  margin: 40px;
+}
+
+pre {
+  width: 50%;
+  border-radius: 2px;
 }
