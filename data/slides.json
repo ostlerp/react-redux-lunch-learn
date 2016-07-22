@@ -69,5 +69,12 @@
       "You can describe your App as a series of Actions"
     ],
     "image": "action-series.png"
+  },
+  {
+    "title": "Reducers aren't magic",
+    "info": [
+      "They listen to actions and return objects"
+    ],
+    "image": "reducer.png"
   }
 ]
