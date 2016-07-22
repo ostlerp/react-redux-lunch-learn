@@ -10,6 +10,7 @@ class ActionDemo extends Component {
     super(props);
 
     this.handleFetchUser = this.handleFetchUser.bind(this);
+    this.handleClearUser = this.handleClearUser.bind(this);
     this.handleFetchCompany = this.handleFetchCompany.bind(this);
     this.handleFetchOrders = this.handleFetchOrders.bind(this);
     this.handleFetchReport = this.handleFetchReport.bind(this);
@@ -18,6 +19,10 @@ class ActionDemo extends Component {
 
   handleFetchUser() {
     this.props.dispatch(Actions.UserActions.fetchUser());
+  }
+
+  handleClearUser() {
+
   }
 
   handleFetchCompany() {
@@ -38,20 +43,19 @@ class ActionDemo extends Component {
 
   render() {
 
-    const { user } = this.props;
+    const { user, company, order, report, settings } = this.props;
 
-    let state = {
-      user
-    };
+    let state = { user, company, order, report, settings };
 
     return (
       <div>
         <Wrapper title="Action Creators">
           <Item onClick={this.handleFetchUser}>Fetch Users</Item>
-          <Item>Fetch Company</Item>
-          <Item>Fetch Orders</Item>
-          <Item>Fetch Report</Item>
-          <Item>Fetch Settings</Item>
+          <Item onClick={this.handleClearUser}>Clear User</Item>
+          <Item onClick={this.handleFetchCompany}>Fetch Company</Item>
+          <Item onClick={this.handleFetchOrders}>Fetch Orders</Item>
+          <Item onClick={this.handleFetchReport}>Fetch Report</Item>
+          <Item onClick={this.handleFetchSettings}>Fetch Settings</Item>
         </Wrapper>
         <Wrapper>
           <CodeMarkup content={JSON.stringify(state, null, '\t')} />
