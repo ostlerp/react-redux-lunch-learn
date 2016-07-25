@@ -5,6 +5,7 @@ import company from './company';
 import order from './order';
 import report from './report';
 import settings from './settings';
+import posts from './posts';
 
 const appReducer = CombineReducers({
   slide,
@@ -12,7 +13,8 @@ const appReducer = CombineReducers({
   company,
   order,
   report,
-  settings
+  settings,
+  posts
 });
 
 export default appReducer;

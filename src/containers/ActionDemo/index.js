@@ -15,6 +15,7 @@ class ActionDemo extends Component {
     this.handleFetchOrders = this.handleFetchOrders.bind(this);
     this.handleFetchReport = this.handleFetchReport.bind(this);
     this.handleFetchSettings = this.handleFetchSettings.bind(this);
+    this.handleFetchPosts = this.handleFetchPosts.bind(this);
   }
 
   handleFetchUser() {
@@ -41,21 +42,26 @@ class ActionDemo extends Component {
 
   }
 
+  handleFetchPosts() {
+
+  }
+
   render() {
 
-    const { user, company, order, report, settings } = this.props;
+    const { user, company, order, report, settings, posts } = this.props;
 
-    let state = { user, company, order, report, settings };
+    let state = { user, company, order, report, settings, posts };
 
     return (
       <div>
         <Wrapper title="Action Creators">
-          <Item onClick={this.handleFetchUser}>Fetch Users</Item>
+          <Item onClick={this.handleFetchUser}>Get User</Item>
           <Item onClick={this.handleClearUser}>Clear User</Item>
-          <Item onClick={this.handleFetchCompany}>Fetch Company</Item>
-          <Item onClick={this.handleFetchOrders}>Fetch Orders</Item>
-          <Item onClick={this.handleFetchReport}>Fetch Report</Item>
-          <Item onClick={this.handleFetchSettings}>Fetch Settings</Item>
+          <Item onClick={this.handleFetchCompany}>Get Company</Item>
+          <Item onClick={this.handleFetchOrders}>Get Orders</Item>
+          <Item onClick={this.handleFetchReport}>Get Report</Item>
+          <Item onClick={this.handleFetchSettings}>Get Settings</Item>
+          <Item onClick={this.handleFetchPosts}>Get Posts</Item>
         </Wrapper>
         <Wrapper>
           <CodeMarkup content={JSON.stringify(state, null, '\t')} />

@@ -4,3 +4,4 @@ export let OrderActions = require('./OrderActions');
 export let ReportActions = require('./ReportActions');
 export let SettingsActions = require('./SettingsActions');
 export let UserActions = require('./UserActions');
+export let PostActions = require('./PostActions');
