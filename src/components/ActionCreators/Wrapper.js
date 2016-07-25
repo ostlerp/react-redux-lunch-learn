@@ -10,7 +10,7 @@ class ActionCreatorWrapper extends Component {
   render() {
     return (
       <div>
-        { this.props.title && <h2 className="title center">Action Creators</h2> }
+        { this.props.title && <h2 className="title center">{ this.props.title }</h2> }
         <div className="action-demo-container">
           { this.props.children }
         </div>

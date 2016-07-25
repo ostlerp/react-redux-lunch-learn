@@ -3,7 +3,7 @@ body {
   font-family: sans-serif;
   background: #1f4e5f;
   color: #f4f7f7;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .center {
@@ -12,4 +12,14 @@ body {
 
 h2 {
   font-size: 3em;
+}
+
+a {
+  color: white;
+}
+
+.bottom-right {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }

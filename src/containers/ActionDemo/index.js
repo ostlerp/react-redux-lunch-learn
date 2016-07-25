@@ -63,7 +63,7 @@ class ActionDemo extends Component {
           <Item onClick={this.handleFetchSettings}>Get Settings</Item>
           <Item onClick={this.handleFetchPosts}>Get Posts</Item>
         </Wrapper>
-        <Wrapper>
+        <Wrapper title="State">
           <CodeMarkup content={JSON.stringify(state, null, '\t')} />
         </Wrapper>
       </div>
