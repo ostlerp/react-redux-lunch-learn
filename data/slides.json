@@ -1,6 +1,6 @@
 [
   {
-    "title": "Let's eat food and learn something",
+    "title": "Let's eat food and learn stuff",
     "image": "business-lunch.jpg"
   },
   {
@@ -20,8 +20,7 @@
     "title": "Why's it cool then?",
     "info": [
       "In React, the UI is a pure function of state and props"
-    ],
-    "image": "disappointed.gif"
+    ]
   },
   {
     "title": "Wait, that makes it cool?",
