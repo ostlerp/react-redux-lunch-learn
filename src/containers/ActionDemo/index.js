@@ -27,7 +27,7 @@ class ActionDemo extends Component {
   }
 
   handleFetchCompany() {
-
+    this.props.dispatch(Actions.UserActions.fetchCompany());
   }
 
   handleFetchOrders() {
