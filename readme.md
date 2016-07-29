@@ -2,9 +2,9 @@
 
 ## Running the Web App
 
-1. After completing the Installation Instructions above, simply run `./start.sh` or `npm run serve` whilst in the root directory.
-2. Browse to `http://localhost:8080` for the web app.
-3. Browse to `http://localhost:8082` for the mocha unit tests.
+1. Simply run `npm install` to install all dependencies
+2. Run `node index` whilst in the root directory to start application.
+4. Browse to `http://localhost:8082` for the web app.
 
 [Nodemon](https://www.npmjs.com/package/nodemon) is also great tool for running the local webserver.
 `nodemon index.js` will run and live update both the client and the node server used for SSR.
