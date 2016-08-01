@@ -41,6 +41,7 @@
     "title": "Tell us more",
     "info": [
       "It's independent of React",
+      "Evolution of Flux",
       "Could be used with Angular if you wanted"
     ]
   },
