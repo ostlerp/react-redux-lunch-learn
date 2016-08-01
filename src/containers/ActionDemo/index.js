@@ -23,7 +23,7 @@ class ActionDemo extends Component {
   }
 
   handleClearUser() {
-
+    this.props.dispatch(Actions.UserActions.clearUser());
   }
 
   handleFetchCompany() {
