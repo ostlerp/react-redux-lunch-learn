@@ -42,8 +42,8 @@ class ActionDemo extends Component {
 
   }
 
-  handleFetchPosts() {
-
+  handleFetchPosts(){
+    this.props.dispatch(Actions.PostActions.fetchPost());
   }
 
   render() {
