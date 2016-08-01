@@ -2,7 +2,7 @@
 
 const namespace = 'settings/';
 
-export const POPLULATE_SETTINGS = `${namespace}POPULATE_SETTINGS`;
+export const POPULATE_SETTINGS = `${namespace}POPULATE_SETTINGS`;
 
 export let populateSettings = (user) => {
   return {
