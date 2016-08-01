@@ -35,7 +35,7 @@ class ActionDemo extends Component {
   }
 
   handleFetchReport() {
-
+    this.props.dispatch(Actions.ReportActions.fetchReport());
   }
 
   handleFetchSettings() {
