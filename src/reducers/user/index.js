@@ -6,6 +6,8 @@ export default function user(state = null, action) {
       return { fetching: true };
     case UserActions.RECEIVE_USER:
       return action.user;
+    case UserActions.CLEAR_USER:
+      return null;
     default:
       return state;
   }
