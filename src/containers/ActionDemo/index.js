@@ -31,7 +31,7 @@ class ActionDemo extends Component {
   }
 
   handleFetchOrders() {
-
+    this.props.dispatch(Actions.OrderActions.fetchOrder(2));
   }
 
   handleFetchReport() {
