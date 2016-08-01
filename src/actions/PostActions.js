@@ -2,8 +2,8 @@
 
 const namespace = 'post/';
 
-export const FETCH_USER = `${namespace}FETCH_POST`;
-export const RECEIVE_USER = `${namespace}RECEIVE_POST`;
+export const FETCH_POST = `${namespace}FETCH_POST`;
+export const RECEIVE_POST = `${namespace}RECEIVE_POST`;
 
 export let fetchingPost = () => {
   return {
