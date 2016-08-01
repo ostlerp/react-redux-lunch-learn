@@ -27,7 +27,7 @@ class ActionDemo extends Component {
   }
 
   handleFetchCompany() {
-
+    this.props.dispatch(Actions.CompanyActions.fetchCompany(5));
   }
 
   handleFetchOrders() {
@@ -35,15 +35,15 @@ class ActionDemo extends Component {
   }
 
   handleFetchReport() {
-
+    this.props.dispatch(Actions.ReportActions.fetchReport());
   }
 
   handleFetchSettings() {
     this.props.dispatch(Actions.SettingsActions.populateSettings());
   }
 
-  handleFetchPosts() {
-
+  handleFetchPosts(){
+    this.props.dispatch(Actions.PostActions.fetchPost());
   }
 
   render() {
