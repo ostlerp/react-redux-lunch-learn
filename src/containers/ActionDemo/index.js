@@ -39,7 +39,7 @@ class ActionDemo extends Component {
   }
 
   handleFetchSettings() {
-
+    this.props.dispatch(Actions.SettingsActions.populateSettings());
   }
 
   handleFetchPosts(){
